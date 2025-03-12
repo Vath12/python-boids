@@ -2,7 +2,10 @@ import numpy as np
 import random,math,pygame,time
 
 #short afternoon project implementing boids 
-#not the cleanest but it works
+
+#I avoided using classes to improve performance
+#as far as I am aware python classes are implemented using dictionaries which adds a bunch of overhead
+#readability took a hit but I was more concerned with cpu time per boid update
 
 SIZE = (800,800)
 BOUNDS = (-50.0,-50.0,850.0,850.0)
